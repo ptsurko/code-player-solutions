@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head><style type="text/css">
+body {
+    background: #ccc;
+}
+
+.cloud {
+    margin: 140px auto 0 auto;
+    width: 400px;
+    height: 140px;
+    border-radius: 70px;
+    position: relative;
+    background: #f2f9fe;
+	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+    background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+}
+
+.cloud:before, .cloud:after {
+    content: '';
+    background: #f2f9fe;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.cloud:before {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 60px;
+    border-radius: 50px;
+}
+
+.cloud:after {
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: 130px;
+    border-radius: 100px;
+}
+
+.cloud > .shadow {
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.3);
+    border-radius: 50%;
+    bottom: -25px;
+}
+		</style>
+		</head>
+	<body>
+		<div class="cloud"><div class="shadow"></div></div>
+	</body>
+</html>
