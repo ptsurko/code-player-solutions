@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .android {
+            margin: 0 auto;
+            width: 380px;
+        }
+
+        .head, .hand, .body, .leg {
+            background: #A4CA39;
+        }
+
+        .head {
+            width: 230px;
+            height: 100px;
+            border-radius: 100px 100px 0 0;
+            position: relative;
+            margin: 60px 0 0 80px;
+        }
+
+            .head:hover {
+                -webkit-transform: rotate(-5deg);
+                -moz-transform: rotate(-5deg);
+                -ms-transform: rotate(-5deg);
+                -o-transform: rotate(-5deg);
+                transform: rotate(-5deg);
+                -webkit-transform-origin: 0 100%;
+                -moz-transform-origin: 0 100%;
+                -ms-transform-origin: 0 100%;
+                -o-transform-origin: 0 100%;
+                transform-origin: 0 100%;
+            }
+
+            .head:before, .head:after {
+                width: 7px;
+                height: 50px;
+                content: '';
+                display: block;
+                border-radius: 5px;
+                background: #A4CA39;
+            }
+
+            .head:before {
+                -webkit-transform: rotateZ(-30deg);
+                -moz-transform: rotateZ(-30deg);
+                -ms-transform: rotateZ(-30deg);
+                -o-transform: rotateZ(-30deg);
+                transform: rotateZ(-30deg);
+                position: absolute;
+                left: 50px;
+                top: -35px;
+            }
+
+            .head:after {
+                -webkit-transform: rotateZ(30deg);
+                -moz-transform: rotateZ(30deg);
+                -ms-transform: rotateZ(30deg);
+                -o-transform: rotateZ(30deg);
+                transform: rotateZ(30deg);
+                position: absolute;
+                left: 170px;
+                top: -35px;
+            }
+
+
+        .eye {
+            border: 10px solid white;
+            border-radius: 10px;
+        }
+
+        .eye-left {
+            position: absolute;
+            left: 60px;
+            top: 40px;
+        }
+
+        .eye-right {
+            position: absolute;
+            left: 150px;
+            top: 40px;
+        }
+
+
+        .body {
+            width: 230px;
+            height: 200px;
+            margin: 10px 0 0 80px;
+            border-radius: 0 0 35px 35px;
+            position: relative;
+        }
+
+        .hand {
+            width: 50px;
+            height: 150px;
+            border-radius: 25px;
+        }
+
+        .hand-left {
+            position: absolute;
+            left: -60px;
+        }
+
+            .hand-left:hover {
+                -webkit-transform: rotate(10deg);
+                -moz-transform: rotate(10deg);
+                -ms-transform: rotate(10deg);
+                -o-transform: rotate(10deg);
+                transform: rotate(10deg);
+                -webkit-transform-origin: 100% 0;
+                -moz-transform-origin: 100% 0;
+                -ms-transform-origin: 100% 0;
+                -o-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+            }
+
+        .hand-right {
+            position: absolute;
+            left: 240px;
+        }
+
+        .android .leg {
+            width: 50px;
+            height: 100px;
+            border-radius: 25px;
+            position: absolute;
+            top: 170px;
+        }
+
+        .leg-left {
+            left: 40px;
+        }
+
+        .leg-right {
+            left: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div class="android">
+        <div class="head">
+            <div class="eye eye-left"></div>
+            <div class="eye eye-right"></div>
+        </div>
+        <div class="body">
+            <div class="hand hand-left"></div>
+            <div class="hand hand-right"></div>
+            <div class="leg leg-left"></div>
+            <div class="leg leg-right"></div>
+        </div>
+    </div>
+</body>
+</html>

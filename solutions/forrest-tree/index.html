@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .tree {
+            margin: 0 auto;
+            height: 0;
+            width: 0;
+            border-right: 70px solid transparent;
+            border-bottom: 210px solid #5b9a68;
+            border-left: 70px solid transparent;
+            position: relative;
+        }
+
+        .root {
+            height: 90px;
+            width: 20px;
+            background: #3b543f;
+            position: absolute;
+            top: 150px;
+            left: -10px;
+        }
+
+        .branch-left, .branch-right1, .branch-right2 {
+            background: #3b543f;
+        }
+
+        .branch-left {
+            position: absolute;
+            height: 40px;
+            width: 6px;
+            left: -20px;
+            top: 150px;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        .branch-right1 {
+            position: absolute;
+            height: 40px;
+            width: 6px;
+            left: 10px;
+            top: 145px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .branch-right2 {
+            position: absolute;
+            height: 50px;
+            width: 6px;
+            left: 15px;
+            top: 160px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="tree">
+        <div class="branch-left"></div>
+        <div class="branch-right1"></div>
+        <div class="branch-right2"></div>
+        <div class="root"></div>
+    </div>
+</body>
+</html>
