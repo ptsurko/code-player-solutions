@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        ul.tabs li {
+            list-style: none;
+            float: left;
+            background: #ccc;
+            border-radius: 15px 15px 0 0;
+            position: relative;
+        }
+
+        .tabs a {
+            padding: 5px 40px;
+            display: inline-block;
+        }
+
+        .tabs li.active {
+            background: #999;
+        }
+
+        .tabs .active:before, .tabs .active:after,
+        .tabs .active a:before, .tabs .active a:after,
+        .tabs li:first-child:before, .tabs li:last-child:after,
+        .tabs li:first-child a:before, .tabs li:last-child a:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0px;
+        }
+
+        /* First/Last Corners */
+        .tabs li:first-child:before, .tabs li:last-child:after {
+            height: 15px;
+            width: 15px;
+            background: #ccc;
+            z-index: 1;
+        }
+
+        .tabs li:first-child:before {
+            left: -15px;
+        }
+
+        .tabs li:last-child:after {
+            right: -15px;
+        }
+
+        /* First/Last Circles */
+        .tabs li:first-child a:before, .tabs li:last-child a:after {
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            background: #fff;
+            z-index: 2;
+        }
+
+        .tabs li:first-child a:before {
+            left: -30px;
+        }
+
+        .tabs li:last-child a:after {
+            right: -30px;
+        }
+
+        /* Corners */
+        .tabs .active:before, .tabs .active:after {
+            height: 15px;
+            width: 15px;
+            background: #999;
+            z-index: 1;
+        }
+
+        .tabs .active:before {
+            left: -15px;
+        }
+
+        .tabs .active:after {
+            right: -15px;
+        }
+
+        /* Circles */
+        .tabs .active a:before, .tabs .active a:after {
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            background: #ccc;
+            z-index: 2;
+        }
+
+        .tabs .active a:before {
+            left: -30px;
+        }
+
+        .tabs .active a:after {
+            right: -30px;
+        }
+
+        .tabs li:first-child.active:before,
+        .tabs li:last-child.active:after {
+            background: #999;
+        }
+
+        .tabs li:first-child.active a:before,
+        .tabs li:last-child.active a:after {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li class="active"><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+    </ul>
+</body>
+</html>
